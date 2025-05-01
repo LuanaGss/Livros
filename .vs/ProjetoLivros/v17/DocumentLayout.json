@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|c:\\users\\fic\\source\\repos\\projetolivros\\projetolivros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|solutionrelative:projetolivros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|c:\\users\\fic\\source\\repos\\projetolivros\\projetolivros\\context\\livroscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|solutionrelative:projetolivros\\context\\livroscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|c:\\users\\fic\\source\\repos\\projetolivros\\projetolivros\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|solutionrelative:projetolivros\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|c:\\users\\fic\\source\\repos\\projetolivros\\projetolivros\\models\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|solutionrelative:projetolivros\\models\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|c:\\users\\fic\\source\\repos\\projetolivros\\projetolivros\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8801F9F7-E74B-40E5-801B-87E652D6EF47}|ProjetoLivros\\ProjetoLivros.csproj|solutionrelative:projetolivros\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Program.cs",
+              "RelativeDocumentMoniker": "ProjetoLivros\\Program.cs",
+              "ToolTip": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Program.cs",
+              "RelativeToolTip": "ProjetoLivros\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T00:50:22.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LivrosContext.cs",
+              "DocumentMoniker": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Context\\LivrosContext.cs",
+              "RelativeDocumentMoniker": "ProjetoLivros\\Context\\LivrosContext.cs",
+              "ToolTip": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Context\\LivrosContext.cs",
+              "RelativeToolTip": "ProjetoLivros\\Context\\LivrosContext.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAcwEUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T23:27:53.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProjetoLivros\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Models\\Usuario.cs",
+              "RelativeToolTip": "ProjetoLivros\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T23:02:42.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "ProjetoLivros\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Models\\Categoria.cs",
+              "RelativeToolTip": "ProjetoLivros\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T23:00:22.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TipoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Models\\TipoUsuario.cs",
+              "RelativeDocumentMoniker": "ProjetoLivros\\Models\\TipoUsuario.cs",
+              "ToolTip": "C:\\Users\\fic\\source\\repos\\ProjetoLivros\\ProjetoLivros\\Models\\TipoUsuario.cs",
+              "RelativeToolTip": "ProjetoLivros\\Models\\TipoUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T22:54:13.852Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
