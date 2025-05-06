@@ -12,7 +12,7 @@ using ProjetoLivros.Context;
 namespace ProjetoLivros.Migrations
 {
     [DbContext(typeof(LivrosContext))]
-    [Migration("20250501005626_Inicial")]
+    [Migration("20250506001726_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -41,7 +41,9 @@ namespace ProjetoLivros.Migrations
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
@@ -63,7 +65,9 @@ namespace ProjetoLivros.Migrations
 
                     b.Property<string>("NomeCategoria")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)");
 
                     b.HasKey("CategoriaId");
 
@@ -80,7 +84,9 @@ namespace ProjetoLivros.Migrations
 
                     b.Property<string>("Autor")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(200)");
 
                     b.Property<int>("CategoriaId")
                         .HasColumnType("int");
@@ -89,20 +95,19 @@ namespace ProjetoLivros.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("LivroId1")
-                        .HasColumnType("int");
+                        .HasMaxLength(255)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Titulo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(200)");
 
                     b.HasKey("LivroId");
 
                     b.HasIndex("CategoriaId");
-
-                    b.HasIndex("LivroId1");
 
                     b.ToTable("Livros");
                 });
@@ -117,9 +122,14 @@ namespace ProjetoLivros.Migrations
 
                     b.Property<string>("DescricaoTipo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)");
 
                     b.HasKey("TipoUsuarioId");
+
+                    b.HasIndex("DescricaoTipo")
+                        .IsUnique();
 
                     b.ToTable("TiposUsuarios");
                 });
@@ -188,14 +198,10 @@ namespace ProjetoLivros.Migrations
             modelBuilder.Entity("ProjetoLivros.Models.Livro", b =>
                 {
                     b.HasOne("ProjetoLivros.Models.Categoria", "Categoria")
-                        .WithMany()
+                        .WithMany("Livros")
                         .HasForeignKey("CategoriaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("ProjetoLivros.Models.Livro", null)
-                        .WithMany("Livros")
-                        .HasForeignKey("LivroId1");
 
                     b.Navigation("Categoria");
                 });
@@ -211,7 +217,7 @@ namespace ProjetoLivros.Migrations
                     b.Navigation("TipoUsuario");
                 });
 
-            modelBuilder.Entity("ProjetoLivros.Models.Livro", b =>
+            modelBuilder.Entity("ProjetoLivros.Models.Categoria", b =>
                 {
                     b.Navigation("Livros");
                 });

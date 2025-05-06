@@ -68,8 +68,82 @@ namespace ProjetoLivros.Context
                     .WithMany(t => t.Usuarios)
                     .HasForeignKey(u => u.TipoUsuarioId)
                     .OnDelete(DeleteBehavior.Cascade);
-                }                    
-            );
+                });
+
+            modelBuilder.Entity<TipoUsuario>(entity =>
+            {
+                // Configuro a primary key
+                entity.HasKey(t => t.TipoUsuarioId);
+
+                entity.Property(t => t.DescricaoTipo)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.HasIndex(t => t.DescricaoTipo)
+                    .IsUnique();
+            });
+
+            modelBuilder.Entity<Livro>(entity =>
+            {
+                entity.HasKey(l => l.LivroId);
+
+                entity.Property(l => l.Titulo)
+                .IsRequired()
+                .HasMaxLength(200)
+                .IsUnicode(false);
+
+                entity.Property(l => l.Autor)
+                .IsRequired()
+                .HasMaxLength(200)
+                .IsUnicode(false);
+
+                entity.Property(l => l.Descricao)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+                entity.Property(l => l.DataPublicacao)
+                .IsRequired();
+
+                // Relacionamentos
+                // Livro - Categoria
+                // 1 - N
+                entity.HasOne(l => l.Categoria)
+                .WithMany(c => c.Livros)
+                .HasForeignKey(u => u.CategoriaId)
+                .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<Categoria>(entity =>
+            {
+                entity.HasKey(c => c.CategoriaId);
+
+                entity.Property(c => c.NomeCategoria)
+                .IsRequired()
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<Assinatura>(entity =>
+            {
+                entity.HasKey(a => a.AssinaturaId);
+
+                entity.Property(a => a.DataInicio)
+                .IsRequired();
+
+                entity.Property(a => a.DataFim)
+                .IsRequired();
+
+                entity.Property(a => a.Status)
+                .IsRequired()
+                 .HasMaxLength(100)
+                .IsUnicode(false);
+
+                entity.HasOne(a => a.Usuario)
+               .WithMany()
+               .HasForeignKey(a => a.UsuarioId)
+               .OnDelete(DeleteBehavior.Cascade);
+            });
         }
     }
 }
