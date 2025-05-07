@@ -341,3 +341,4 @@ C:\Users\fic\Downloads\Livros\ProjetoLivros\obj\Debug\net9.0\refint\ProjetoLivro
 C:\Users\fic\Downloads\Livros\ProjetoLivros\obj\Debug\net9.0\ProjetoLivros.pdb
 C:\Users\fic\Downloads\Livros\ProjetoLivros\obj\Debug\net9.0\ProjetoLivros.genruntimeconfig.cache
 C:\Users\fic\Downloads\Livros\ProjetoLivros\obj\Debug\net9.0\ref\ProjetoLivros.dll
+C:\Users\fic\Downloads\Livros\ProjetoLivros\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

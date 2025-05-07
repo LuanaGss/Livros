@@ -50,7 +50,7 @@ namespace ProjetoLivros.Repositories
 
         public List<Categoria> ListarTodos()
         {
-            throw new NotImplementedException();
+            return _context.Categorias.ToList();
         }
     }
 }

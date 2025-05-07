@@ -18,9 +18,10 @@ namespace ProjetoLivros.Controllers
         }
 
         [HttpGet]
-        public IActionResult ListarCategoria()
+        public IActionResult ListarTodos()
         {
-            return Ok(_categoriaRepository.ListarTodos());
+            var categoria = _categoriaRepository.ListarTodos();
+            return Ok(categoria);
         }
 
         [HttpPost]
@@ -30,6 +31,37 @@ namespace ProjetoLivros.Controllers
             _categoriaRepository.Cadastrar(categoria);
 
             return Created();
+        }
+
+        [HttpPut("{id}")]
+
+        public IActionResult Editar(int id, Categoria categoria)
+        {
+            try
+            {
+                _categoriaRepository.Atualizar(id, categoria);
+                return Ok(categoria);
+            }
+            catch(Exception ex)
+            {
+                return NotFound("Categoria não encontrado");
+            }
+        }
+
+        [HttpDelete("{id}")]
+
+        public IActionResult Deletar(int id)
+        {
+            try
+            {
+                _categoriaRepository.Deletar(id);
+
+                return NoContent();
+            }
+            catch(Exception)
+            {
+                return NotFound("Categoria não encontrado");
+            }
         }
     }
 }
